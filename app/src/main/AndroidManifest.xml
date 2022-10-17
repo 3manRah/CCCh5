@@ -10,9 +10,8 @@
         android:label="ccch5 main suit"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:exported="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name="com.example.ccch5.ui.splashscreen.SplashActivity">
+        <activity android:name="com.example.ccch5.ui.splashscreen.SplashActivity" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

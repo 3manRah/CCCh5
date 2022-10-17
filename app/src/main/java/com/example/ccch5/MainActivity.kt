@@ -170,9 +170,9 @@ class MainActivity : AppCompatActivity() , CallbackMsg {
             dialog.dismiss()
         }
         val gameEnd = when (s) {
-            getString(R.string.player_one_win) -> "$name\nWIN !"
-            getString(R.string.player_two_win) -> "$mode\nWIN !"
-            else -> "DRAW !"
+            getString(R.string.player_one_win) -> "$name\nMENANG !"
+            getString(R.string.player_two_win) -> "$mode\nMENANG !"
+            else -> "SERI !"
         }
         tvDialogResult.text = gameEnd
         Log.d("MainActivity" , "RESULT : $gameEnd")
@@ -180,5 +180,5 @@ class MainActivity : AppCompatActivity() , CallbackMsg {
         dialog.setCanceledOnTouchOutside(false)
         dialog.show()
     }
-
+}
 

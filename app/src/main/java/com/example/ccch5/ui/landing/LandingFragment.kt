@@ -1,6 +1,5 @@
 package com.example.ccch5.ui.landing
 
-
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -44,15 +43,15 @@ class LandingFragment : Fragment() {
         tvLanding.text = param1
         when (param2) {
             "1" -> {
-                ivLanding.setImageResource(R.drawable.ic_landing_page1)
+                ivLanding.setImageResource(R.drawable.landing_page1)
                 etName.visibility = View.GONE
             }
             "2" -> {
-                ivLanding.setImageResource(R.drawable.ic_landing_page2)
+                ivLanding.setImageResource(R.drawable.landing_page2)
                 etName.visibility = View.GONE
             }
             "3" -> {
-                ivLanding.setImageResource(R.drawable.ic_landing_page3)
+                ivLanding.setImageResource(R.drawable.landing_page3)
                 etName.visibility = View.VISIBLE
                 etName.addTextChangedListener(object : TextWatcher {
                     override fun beforeTextChanged(

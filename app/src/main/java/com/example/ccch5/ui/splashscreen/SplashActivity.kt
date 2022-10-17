@@ -6,7 +6,6 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ccch5.R
 import com.example.ccch5.ui.landing.LandingActivity
-import com.example.ccch5.ui.landing.LandingFragment
 
 
 class SplashActivity : AppCompatActivity() {
@@ -15,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         Handler().postDelayed({
-            startActivity(Intent(this,LandingActivity::class.java)
+            startActivity(Intent(this , LandingActivity::class.java))
             finish()
         } , 1000)
     }
