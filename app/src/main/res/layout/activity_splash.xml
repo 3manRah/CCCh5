@@ -10,11 +10,25 @@
 
     <ImageView
         android:id="@+id/ivSplash"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="196dp"
+        android:layout_height="307dp"
         android:src="@drawable/splash_screen2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintVertical_bias="0.752" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="242dp"
+        android:layout_height="295dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivSplash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/splash_screen1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

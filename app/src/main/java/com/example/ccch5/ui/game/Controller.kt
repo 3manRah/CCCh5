@@ -1,8 +1,8 @@
-package com.example.ccch5
+package com.example.ccch5.ui.game
 
 
 import android.content.Context
-import package com.example.ccch5.R
+import com.example.ccch5.R
 
 class Controller(
     private val listener: CallbackMsg ,
