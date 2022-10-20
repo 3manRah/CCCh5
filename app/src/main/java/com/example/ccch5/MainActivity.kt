@@ -130,10 +130,10 @@ class MainActivity : AppCompatActivity() , CallbackMsg {
     }
 
     private fun selectComputer(s: String?) {
-        Log.d("MainActivity" , "$mode Select ${s.toString().capitalize()}")
+        Log.d("MainActivity" , "$mode Select ${s.toString().replaceFirstChar(Char::titlecase)}")
         Toast.makeText(
             this ,
-            "$mode Select ${s.toString().capitalize()}" ,
+            "$mode Select ${s.toString().replaceFirstChar(Char::titlecase)}" ,
             Toast.LENGTH_SHORT
         ).show()
         mutableListOf(
@@ -172,7 +172,7 @@ class MainActivity : AppCompatActivity() , CallbackMsg {
         val gameEnd = when (s) {
             getString(R.string.player_one_win) -> "$name\nMENANG !"
             getString(R.string.player_two_win) -> "$mode\nMENANG !"
-            else -> "SERI !"
+            else -> "SERI!"
         }
         tvDialogResult.text = gameEnd
         Log.d("MainActivity" , "RESULT : $gameEnd")
